@@ -5,8 +5,6 @@ source ~/.config/zsh/plugins.zsh
 export EDITOR=nvim
 export VISUAL=nvim
 
-# Golang path and yarn
-export PATH="$PATH:$HOME/.local/bin"
 
 # Colorize output
 alias ls='ls --color=auto'
@@ -18,7 +16,7 @@ export GOPATH="${HOME}/go"
 # Gcr socket for gnome keyring and ssh
 export SSH_AUTH_SOCK=/run/user/$(id -u)/gcr/ssh
 
-export PATH="${PATH}:${HOME}/.krew/bin:${HOME}/.cargo/bin:${HOME}/.gem/ruby/2.7.0/bin:${HOME}/.npm/bin:${HOME}/go/bin/"
+export PATH="${PATH}:${HOME}/.krew/bin:${HOME}/.cargo/bin:${HOME}/.gem/ruby/2.7.0/bin:${HOME}/.npm/bin:${HOME}/go/bin/:${HOME}/.local/bin"
 alias ssh="TERM=xterm-256color ssh"
 
 # Setup fzf install directory
