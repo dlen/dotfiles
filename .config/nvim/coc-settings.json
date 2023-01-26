@@ -1,0 +1,30 @@
+{
+  "eslint.format.enable": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "java.home": "/usr/lib/jvm/default-runtime",
+  "java.referencesCodeLens.enabled": true,
+  "python.venvPath": "/home/diego/.local/share/virtualenvs",
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Path": "/usr/bin/flake8",
+  "rust-analyzer.procMacro.enable": true,
+  "codeLens.enable": true,
+  "languageserver": {
+    "terraform": {
+			"command": "terraform-ls",
+			"args": ["serve"],
+			"filetypes": [ "terraform", "tf" ],
+			"initializationOptions": {}
+		}
+  },
+  "diagnostic-languageserver.filetypes": {
+    "sh": "shellcheck",
+    "email": "languagetool",
+    "markdown": ["languagetool", "markdownlint"],
+    "vimwiki": ["languagetool", "markdownlint"]
+  },
+  "solargraph.useBundler": true,
+  "solargraph.diagnostics": true
+}
